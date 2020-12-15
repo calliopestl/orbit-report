@@ -14,12 +14,13 @@ export class Satellite {
       
     }
 
-    shouldShowWarning() {
+    shouldShowWarning(): boolean {
         let warningReason = 'Space Debris'
       if (this.type.toLowerCase() === warningReason.toLowerCase()) {
             return true;
       
          }
+         return false;
     }
 
 }
